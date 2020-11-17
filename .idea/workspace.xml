@@ -13,7 +13,7 @@
     <list default="true" id="06f12b7b-a2e7-4932-8df8-b552685ea7e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/Users/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/Users/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/Users/sqliteRepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/Users/sqliteRepository.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +41,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -55,6 +56,22 @@
       <recent name="$PROJECT_DIR$/authentication-service/usersRepository" />
       <recent name="$PROJECT_DIR$/authentication-service/rqlRepository" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goMicroservices" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/authentication-service/main.go" />
+      <package value="goMicroservices" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,10 +90,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="529" y="169" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605586392141">
+      <screen x="0" y="0" width="1920" height="1028" />
+    </state>
+    <state x="529" y="169" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1028@0.0.1920.1028" timestamp="1605586392141" />
     <state x="721" y="165" width="468" height="704" key="#com.intellij.ide.util.MemberChooser" timestamp="1605580150930">
       <screen x="0" y="0" width="1920" height="1028" />
     </state>
     <state x="721" y="165" width="468" height="704" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1028@0.0.1920.1028" timestamp="1605580150930" />
+    <state width="1864" height="253" key="GridCell.Tab.0.bottom" timestamp="1605586538904">
+      <screen x="0" y="0" width="1920" height="1028" />
+    </state>
+    <state width="1864" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1028@0.0.1920.1028" timestamp="1605586538904" />
+    <state width="1864" height="253" key="GridCell.Tab.0.center" timestamp="1605586538903">
+      <screen x="0" y="0" width="1920" height="1028" />
+    </state>
+    <state width="1864" height="253" key="GridCell.Tab.0.center/0.0.1920.1028@0.0.1920.1028" timestamp="1605586538903" />
+    <state width="1864" height="253" key="GridCell.Tab.0.left" timestamp="1605586538903">
+      <screen x="0" y="0" width="1920" height="1028" />
+    </state>
+    <state width="1864" height="253" key="GridCell.Tab.0.left/0.0.1920.1028@0.0.1920.1028" timestamp="1605586538903" />
+    <state width="1864" height="253" key="GridCell.Tab.0.right" timestamp="1605586538904">
+      <screen x="0" y="0" width="1920" height="1028" />
+    </state>
+    <state width="1864" height="253" key="GridCell.Tab.0.right/0.0.1920.1028@0.0.1920.1028" timestamp="1605586538904" />
     <state width="318" height="572" key="HiddenNamespacesPopup" timestamp="1605584733540">
       <screen x="0" y="0" width="1920" height="1028" />
     </state>

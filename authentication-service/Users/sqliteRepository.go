@@ -11,7 +11,7 @@ type UserRepository struct{
 
 func (u UserRepository) GetById(id string) (*User,error) {
 
-	res ,err:= u.DB.Query("select * from users U where U.id=" +id)
+	res ,err:= u.DB.Query("select * from users  where id=$1",id)
 	user:=User{}
 	if err != nil {
 		return nil, err
@@ -22,13 +22,11 @@ func (u UserRepository) GetById(id string) (*User,error) {
 }
 
 func (u UserRepository) GetAll() (*[]User,error) {
-	rows,err:= u.DB.Query("SELECT * FROM USERS")
+	rows,err:= u.DB.Query("SELECT * FROM users")
 	if err != nil {
 		return nil, err
 	}
 		users:=[]User{}
-
-
 	for rows.Next() {
 		user:=User{}
 
@@ -51,8 +49,8 @@ func (u UserRepository) GetByEmail(email string) (*User,error) {
 }
 
 func (u UserRepository) Create(user *User) (int64,error) {
-	res,err:=u.DB.Exec("INSERT INTO USERS (email,password,isblocked,createdAt,updatedAt)" +
-		"VALUES $1,$2,$3,$4,$5",user.Email,user.Password,user.IsBlocked,user.CreatedAt,user.UpdatedAt)
+	res,err:=u.DB.Exec("INSERT INTO users (email,password,isBlocked,createdAt,updatedAt)" +
+		"VALUES ($1,$2,$3,$4,$5)",user.Email,user.Password,user.IsBlocked,user.CreatedAt,user.UpdatedAt)
 	if err != nil {
 		return -1 ,err
 	}
