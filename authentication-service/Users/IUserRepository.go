@@ -1,11 +1,11 @@
 package Users
 
 type IuserRepository interface {
-	GetById(id int) *User
-	GetAll () *[]User
-	GetByEmail(email string) *User
-	Create (user *User)
-	Edit  (user *User)
-	Remove (user *User) int
-	Block (user *User) int
+	GetById(id int) (*User,error)
+	GetAll () (*[]User,error)
+	GetByEmail(email string) (*User,error)
+	Create (user *User)error
+	Edit  (user *User)error
+	Remove (user *User) (int,error)
+	Block (user *User) (int,error)
 }

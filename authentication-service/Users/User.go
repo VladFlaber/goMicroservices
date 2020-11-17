@@ -7,18 +7,17 @@ import (
 )
 
 type User struct {
-	Id int
+	Id string
 	Email string
 	Password string
-	RoleId int
 	IsBlocked bool
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }
 
-func NewUser(id int, email string, password string, roleId int) *User {
+func NewUser(id string, email string, password string, roleId int) *User {
 	return &User{Id: id, Email: email, Password: password,
-		RoleId: roleId ,CreatedAt: time.Now(),UpdatedAt: time.Now()}
+		CreatedAt: time.Now(),UpdatedAt: time.Now()}
 }
 func (User) validatePassword(password string) bool  {
 	if len(password)==0{
