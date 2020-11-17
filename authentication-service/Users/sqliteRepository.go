@@ -5,13 +5,13 @@ import (
 	"time"
 )
 type UserRepository struct{
-	db *sql.DB
+	DB *sql.DB
 }
 
 
 func (u UserRepository) GetById(id string) (*User,error) {
 
-	res ,err:= u.db.Query("select * from users U where U.id=" +id)
+	res ,err:= u.DB.Query("select * from users U where U.id=" +id)
 	user:=User{}
 	if err != nil {
 		return nil, err
@@ -22,7 +22,7 @@ func (u UserRepository) GetById(id string) (*User,error) {
 }
 
 func (u UserRepository) GetAll() (*[]User,error) {
-	rows,err:= u.db.Query("SELECT * FROM USERS")
+	rows,err:= u.DB.Query("SELECT * FROM USERS")
 	if err != nil {
 		return nil, err
 	}
@@ -40,7 +40,7 @@ func (u UserRepository) GetAll() (*[]User,error) {
 }
 
 func (u UserRepository) GetByEmail(email string) (*User,error) {
-	res ,err:= u.db.Query("select * from users U where U.id=$1", email)
+	res ,err:= u.DB.Query("select * from users U where U.id=$1", email)
 	user:=User{}
 	if err != nil {
 		return nil, err
@@ -51,7 +51,7 @@ func (u UserRepository) GetByEmail(email string) (*User,error) {
 }
 
 func (u UserRepository) Create(user *User) (int64,error) {
-	res,err:=u.db.Exec("INSERT INTO USERS (email,password,isblocked,createdAt,updatedAt)" +
+	res,err:=u.DB.Exec("INSERT INTO USERS (email,password,isblocked,createdAt,updatedAt)" +
 		"VALUES $1,$2,$3,$4,$5",user.Email,user.Password,user.IsBlocked,user.CreatedAt,user.UpdatedAt)
 	if err != nil {
 		return -1 ,err
@@ -65,7 +65,7 @@ func (u UserRepository) Edit(user *User) error {
 	if err != nil {
 		return err
 	}
-	_, err = u.db.Exec("update Users set email=$1 , password=$2,updatedAt=$3",
+	_, err = u.DB.Exec("update Users set email=$1 , password=$2,updatedAt=$3",
 		user.Email, user.Password, time.Now())
 	if err != nil {
 		return err
