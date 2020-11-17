@@ -13,9 +13,8 @@
     <list default="true" id="06f12b7b-a2e7-4932-8df8-b552685ea7e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/Users/IUserRepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/Users/IUserRepository.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication-service/Users/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/Users/User.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/Users/sqliteRepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/Users/sqliteRepository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +77,10 @@
       <screen x="0" y="0" width="1920" height="1028" />
     </state>
     <state x="721" y="165" width="468" height="704" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1028@0.0.1920.1028" timestamp="1605580150930" />
+    <state width="318" height="572" key="HiddenNamespacesPopup" timestamp="1605584733540">
+      <screen x="0" y="0" width="1920" height="1028" />
+    </state>
+    <state width="318" height="572" key="HiddenNamespacesPopup/0.0.1920.1028@0.0.1920.1028" timestamp="1605584733540" />
     <state x="539" y="-1" key="search.everywhere.popup" timestamp="1605367580217">
       <screen x="0" y="0" width="1920" height="1028" />
     </state>

@@ -15,7 +15,7 @@ type User struct {
 	UpdatedAt time.Time
 }
 
-func NewUser(id string, email string, password string, roleId int) *User {
+func NewUser(id string, email string, password string) *User {
 	return &User{Id: id, Email: email, Password: password,
 		CreatedAt: time.Now(),UpdatedAt: time.Now()}
 }
